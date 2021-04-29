@@ -123,7 +123,7 @@ class Commodity:
         return a[0]
 
 
-@app.route('/')
+@app.route('/',methods=["GET"])
 def index():
     context = {
         "top5": TopFiveWinners(),
